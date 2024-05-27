@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greek Hamster Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <h1>Loading...</h1>
+    </div>
+    <div id="main-menu" style="display: none;">
+        <h1>Greek Hamster Game</h1>
+        <button onclick="startGame()">Start Game</button>
+        <button onclick="showSettings()">Settings</button>
+        <button onclick="exitGame()">Exit</button>
+    </div>
+    <div id="main-screen" style="display: none;">
+        <div id="game-container">
+            <div id="score">GREEC: 0</div>
+            <div id="hamster-container">
+                <img src="GAME.jpg" alt="Greek Hamster" id="hamster" onclick="tapHamster()">
+            </div>
+        </div>
+    </div>
+    <div id="settings-screen" style="display: none;">
+        <h1>Settings</h1>
+        <button onclick="backToMenu()">Back</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
